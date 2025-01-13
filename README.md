@@ -21,9 +21,10 @@ This project implements a **Company Management System** with features to manage 
 
 ----
 ## 3.Task Completion Checklist
- [x] Design and implementation of the ReviewCycle and Stage models.
- [x] APIs for managing companies, departments, employees, and review cycles.
- [x] Workflow for Employee Review Cycle, including valid stage transitions.
- [x] Role-based access control for managers and employees.
- [x] Data validation and security checks.
- [x] postman collection.
+
+ - [x] Design and implementation of the ReviewCycle and Stage models.
+ - [x] APIs for managing companies, departments, employees, and review cycles.
+ - [x] Workflow for Employee Review Cycle, including valid stage transitions.
+ - [x] Role-based access control for managers and employees.
+ - [x] Data validation and security checks.
+ - [x] postman collection.
