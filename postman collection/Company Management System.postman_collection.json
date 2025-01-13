@@ -1,0 +1,589 @@
+{
+	"info": {
+		"_postman_id": "5a15ea9c-66d8-45f9-9d5c-b96db324c270",
+		"name": "Company Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29142873",
+		"_collection_link": "https://red-shadow-977707.postman.co/workspace/SCC-~89678559-f3b5-4cd5-881a-0c724f120c34/collection/29142873-5a15ea9c-66d8-45f9-9d5c-b96db324c270?action=share&source=collection_link&creator=29142873"
+	},
+	"item": [
+		{
+			"name": "USER ACCOUNTS",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"brainWiseEmployee0@yahoo.com\",\r\n    \"password\":\"123\",\r\n    \"role\":\"employee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/user/create",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"brainWiseEmployee@yahoo.com\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/user/login",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Companies",
+			"item": [
+				{
+					"name": "get-all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token b9ad2eb94782091bbd637c3a0876653ff20c0762",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/companies",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token b9ad2eb94782091bbd637c3a0876653ff20c0762",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/companies/1",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "get-all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/departments/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"departments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/departments/1",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review Cycles",
+			"item": [
+				{
+					"name": "Pending Review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token b8bea9530c3e41ccdc48c8b466aa2a8557bbbed5",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/reviews/assign-employee",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"assign-employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Date",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 168513cfec7bd326359aa55c81b7418905088c6b",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review_date\":\"2025-01-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/reviews/set-review-date/14/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"set-review-date",
+								"14",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-feedback",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 168513cfec7bd326359aa55c81b7418905088c6b",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"feedback\":\"ok\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/reviews/add-feedback/14/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"add-feedback",
+								"14",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "review-approval",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token b8bea9530c3e41ccdc48c8b466aa2a8557bbbed5",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"action\":\"approve\"\r\n    //\"action\":\"reject\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/reviews/review-approval/14/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"review-approval",
+								"14",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "under-approval",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token b8bea9530c3e41ccdc48c8b466aa2a8557bbbed5",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"action\":\"approve\"\r\n    //\"action\":\"reject\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/reviews/under-approval/14/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reviews",
+								"under-approval",
+								"14",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEES",
+			"item": [
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/v1/employees",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"amr\",\r\n\"email\":\"amr@yahoo.com\",\r\n\"mobile_number\":\"01090362543\",\r\n\"address\":\"جيزه\",\r\n\"company_id\":1,\r\n\"department_id\":1,\r\n\"designation\":\"مبرمج\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/employees/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-by-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/v1/employees/2/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token 168513cfec7bd326359aa55c81b7418905088c6b",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{base-url}}/api/v1/employees/employees/3/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"employees",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 25ad3acb8bcf71574bf0435ed40010a3501b5bfa",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"seif Zein\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}/api/v1/employees/2/",
+							"host": [
+								"{{base-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
