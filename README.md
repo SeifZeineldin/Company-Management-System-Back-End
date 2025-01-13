@@ -28,3 +28,21 @@ This project implements a **Company Management System** with features to manage 
  - [x] Role-based access control for managers and employees.
  - [x] Data validation and security checks.
  - [x] postman collection.
+
+
+
+----
+## 4.Assumptions
+1. Our roles is (admin , employee , manager)
+2. only admin can see any comapany and any department , create Employee and assigned he to account 
+3. only manager can create Pending Review and Aproval or reject review
+4. only employee can create Review Scheduled and Feedback Provided
+
+
+
+
+
+
+
+
+
