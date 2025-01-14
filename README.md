@@ -53,15 +53,15 @@ This project implements a **Company Management System** with features to manage 
       cd DataBase
    Import the tables using the SQL dump files in the folder:
    ```bash
-   mysql -u your_username -p your_database_name < table1.sql
-   mysql -u your_username -p your_database_name < table2.sql
-   # Repeat for all files in the folder.
+      mysql -u your_username -p your_database_name < table1.sql
+      mysql -u your_username -p your_database_name < table2.sql
+      # Repeat for all files in the folder.
 6. Apply Migrations
    ```bash
-   python manage.py migrate
+      python manage.py migrate
 7. Run Server
 ```bash
-   python manage.py runserver
+      python manage.py runserver
 
 
 
