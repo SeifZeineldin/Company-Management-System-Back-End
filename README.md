@@ -32,9 +32,9 @@ This project implements a **Company Management System** with features to manage 
 3. Install Dependencies
    ```bash
       pip install -r requirements.txt
-4.Connect with database
+4. Connect with database
    1.open setting.py file
-   ```bash
+   ```python
       DATABASES = {
           'default': {
               'ENGINE': 'django.db.backends.mysql',
@@ -46,11 +46,14 @@ This project implements a **Company Management System** with features to manage 
           }
       }
 
+
 5. Import Database Tables
    Ensure your MySQL server is running.
    Navigate to the DataBase folder in your repository:
+
    ```bash
-      cd DataBase
+     cd DataBase
+
    Import the tables using the SQL dump files in the folder:
    ```bash
       mysql -u your_username -p your_database_name < table1.sql
@@ -60,11 +63,8 @@ This project implements a **Company Management System** with features to manage 
    ```bash
       python manage.py migrate
 7. Run Server
-```bash
+   ```bash
       python manage.py runserver
-
-
-
 
 ## 3.Postman Collection
 
