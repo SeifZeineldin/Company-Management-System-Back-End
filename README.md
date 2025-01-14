@@ -16,8 +16,8 @@ This project implements a **Company Management System** with features to manage 
 ### Installation Steps
 1. Clone the repository:
    ```bash
-git clone https://github.com/SeifZeineldin/Company-Management-System-Back-End.git
-cd Company-Management-System-Back-End
+   git clone https://github.com/SeifZeineldin/Company-Management-System-Back-End.git
+   cd Company-Management-System-Back-End
 
 ----
 ## 3.Task Completion Checklist
